@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Walidacja formularza</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <form class="form">
+      <input
+        name="name"
+        id="input_name"
+        class="form__input"
+        type="text"
+        placeholder="Imię"
+      />
+      <p id="input_name_error" class="error_text hidden">
+        Imię musi zawierać co najmniej 2 znaki!
+      </p>
+      <input
+        name="email"
+        id="input_email"
+        class="form__input"
+        type="text"
+        placeholder="Adres email"
+      />
+      <p id="input_email_error" class="error_text hidden">
+        Email musi zawierać @ oraz domenę!
+      </p>
+      <input
+        name="password"
+        id="input_password"
+        class="form__input"
+        type="password"
+        placeholder="Hasło"
+      />
+      <p id="input_password_error" class="error_text hidden">
+        Hasło musi zawierać 1 znak pisany z dużej litery oraz co najmniej: 8
+        znaków, 1 liczbę, 1 znak specjalny!
+      </p>
+      <input
+        name="confirm"
+        id="input_confirm"
+        class="form__input"
+        type="password"
+        placeholder="Potwierdź hasło"
+      />
+      <p id="input_confirm_error" class="error_text hidden">
+        Hasła się różnią!
+      </p>
+      <div class="input_rodo_container">
+        <label class="label" for="input_rodo">Rodo</label>
+        <input
+          name="rodo"
+          id="input_rodo"
+          class="form__input"
+          type="checkbox"
+        />
+      </div>
+      <input
+        name="submit"
+        id="input__submit"
+        class="submit_btn"
+        type="submit"
+        value="Wyślij"
+      />
+    </form>
+  </body>
+  <script src="index.js"></script>
+</html>
